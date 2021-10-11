@@ -1,7 +1,7 @@
 package GreatLearning.LongestPathProblem.Services;
 
 /**
- * A node class for doubly linked list or binary trees.
+ * A node class for binary trees.
  */
 public class DoubleNode {
     public int data;

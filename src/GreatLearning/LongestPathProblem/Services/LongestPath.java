@@ -9,12 +9,16 @@ public class LongestPath {
      * @return : Array list of the longest path
      */
     public ArrayList<Integer> FindLongestPath(DoubleNode root) {
-        if (root == null)
+
+        //if tree is empty, return an empty array.
+        if (root == null) {
             return new ArrayList<>();
-        //Array list for the right sub-tree.
+        }
+
+        //Array for the right sub-tree.
         ArrayList<Integer> rightNode = FindLongestPath( root.right );
 
-        //Array list for the left sub-tree.
+        //Array for the left sub-tree.
         ArrayList<Integer> leftNode = FindLongestPath( root.left );
 
         if (rightNode.size() < leftNode.size()) {

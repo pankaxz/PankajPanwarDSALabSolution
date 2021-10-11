@@ -35,9 +35,11 @@ public class Main {
         ArrayList<Integer> path = longestPath.FindLongestPath( root );
 
         //Printing the elements of the longest path.
-        System.out.print(" longest path is : ");
-        for (int element : path) {
-           System.out.print(element + " ");
+        System.out.print(" longest path is from leaf : ");
+        for (int i = 0; i < path.size(); i++) {
+           System.out.print(path.get( i ));
+           if(i < path.size()-1)
+               System.out.print( " -> ");
         }
     }
 }
